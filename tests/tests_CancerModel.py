@@ -5,9 +5,8 @@ class TestCancerModel(unittest.TestCase):
 
     def test_diagnosis_to_target(self):
         model = CancerModel()
-        model.diagnosis_to_target()
         diagnosis = "Malignant"
-        target = model.dianosis_to_target(diagnosis)
+        target = model.diagnosis_to_target(diagnosis)
         self.assertEqual(target, 0)
 
         diagnosis = 'Benign'
